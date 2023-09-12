@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(242, 242, 242);
+}
+
+/* top */
+.top {
+    background-color: rgb(113, 113, 113);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding: 0 20px;
+}
+
+.top ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.top li {
+    padding: 0 10px;
+}
+
+.top a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.fb{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+.fb a{
+    margin-left: 20%;
+}
+
+#logo-fb{
+    margin-bottom: 10%;
+    margin-left: 70%;
+}
+
+/* header */
+header {
+    background-color: rgb(204, 204, 204);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.logo img {
+    max-width: 200px;
+    height: auto;
+    margin-left: 20%;
+}
+
+header, .top{
+    width: 100%;
+}
+
+.search{
+    width: 100%;
+    margin-left: 30%; 
+}
+
+.search-bar {
+    width: 100%;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 50%;
+    height: 35px;
+}
+
+.search-bar select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 10px;
+    height: 35px;
+}
+
+.adv-search a{
+    margin-right: 10px;
+    text-decoration: underline;
+    color: rgb(133, 133, 133); 
+    background-color: transparent;
+}
+
+.search-button {
+    background-color: white;
+    color: black;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    height: 35px;
+}
+
+/* Section geral corpo */
+.corpo {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    margin-top: 4%;
+}
+
+.corpo .direita, .esquerda{
+    padding: 0px 15px;
+}
+
+/* Section esquerda */
+
+.esquerda {
+    width: 20%;
+}
+
+.esquerda *{
+    width: 100%;
+    background-color: white;
+}
+
+.prato img {
+    width: 100%;
+}
+
+.titulo-prato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.descricao-prato *{
+    padding: 5px 0;
+}
+
+hr {
+    margin-top: 20px;
+}
+
+.funcionamento {
+    margin-top: 30px;
+}
+
+.funcionamento *{
+    padding: 5px 0px;
+}
+
+.horario {
+    text-align: center;
+    font-size: 85%;
+}
+
+.ss, .sd {
+    display: flex;
+}
+
+.ss * {
+    padding: 0px 10px;
+}
+
+.sd * {
+    padding: 0px 10px;
+}
+
+
+.funcionamento span {
+    font-size: 80%;
+}
+
+
+/* Section direita */
+.direita {
+    width: 80%;
+}
+
+/* dados */
+.direita ul {
+    list-style: none;
+}
+
+.dados {
+    background-color: white;
+}
+
+.dados h3, ul {
+    padding: 10px;
+}
+
+.dados ul li {
+    padding: 5px 0;
+}
+
+/* cardapio */
+.cardapio {
+    margin-top: 4%;
+    background-color: white;
+}
+
+.listas {
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0px;
+}
+
+.cardapio h3 {
+    padding: 0px 3%;
+}
+
+.listas ul + ul {
+    padding: 0% 30%;
+}
+
+.listas ul li {
+    font-size: 80%;
+    padding: 10% 0;
+}
+
+/* quadro */
+
+.quadro {
+    width: 100%;
+    height: 40%;
+    margin-top: 4%;
+    background-color: white;
+}
+
+.quadro article {
+    float: left;
+    width: 40%;
+
+}
+
+article {
+    display: flex;
+    align-items: center;
+    padding: 1% 1%;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.quadro article img {
+    max-width: 100px; 
+    margin-right: 10px; 
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.text * {
+    padding: 4% 0;
+}
+
+
+/* mensagem */
+.mensagem {
+    clear: both;
+    width: 100%;
+    height: 100%;
+}
+
+.mensagem input{
+    width: 100%;
+    height: 20%;
+}
+
+#Botao {
+    background-color: rgb(204, 204, 204);
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    width: 130px;
+    height: 50px;
+    margin-top: 2%;
+    float: right;
+}
+
+
+/* Queries */
+@media screen and (max-width: 1000px) {
+
+    section *{
+        font-size: 20px;
+    }
+
+    .menu {
+        display: none;
+    }
+    
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 4px 0;
+    }
+
+    .logo img{
+        width: 80%;
+    }
+
+    .search{
+        margin-left: 5%; 
+    }
+    
+    .corpo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .esquerda {
+        width: 100%;
+    }
+
+    .direita {
+        width: 100%;
+    }
+
+    .quadro {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mensagem input{
+        height: 80px;
+    }
+
+    #Botao {
+        font-size: 14px;
+        width: 100px;
+        height: 30px;
+    }
+}
+
